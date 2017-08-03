@@ -64,7 +64,7 @@ public class BCrypt
     // BCrypt parameters
     private static final int GENSALT_DEFAULT_LOG2_ROUNDS = 10;
 
-    static final int BCRYPT_SALT_LEN = 16;
+    public static final int BCRYPT_SALT_LEN = 16;
 
     // Blowfish parameters
     private static final int BLOWFISH_NUM_ROUNDS = 16;
@@ -285,7 +285,7 @@ public class BCrypt
     // bcrypt IV: "OrpheanBeholderScryDoubt". The C implementation calls
     // this "ciphertext", but it is really plaintext or an IV. We keep
     // the name to make code comparison easier.
-    static final int bf_crypt_ciphertext[] = { 0x4f727068, 0x65616e42,
+    public static final int bf_crypt_ciphertext[] = { 0x4f727068, 0x65616e42,
 	    0x65686f6c, 0x64657253, 0x63727944, 0x6f756274 };
 
     // Table for Base64 encoding
